@@ -41,7 +41,7 @@ const Login = () => {
       setStatus({ status: data.status, message: data.message });
 
       // save the token in local storage
-      if (localStorage.getItem("pingApp")) {
+      if (!localStorage.getItem("pingApp")) {
         localStorage.setItem(
           "pingApp",
           JSON.stringify({ token: data.token, user: data.user })

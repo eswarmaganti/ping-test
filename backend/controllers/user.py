@@ -36,7 +36,7 @@ class User(Resource):
 
         # input data validation
         if not data['name'] or not data['email'] or not data['password']:
-            return {'message':'All Fields are required - name,email and password'}
+            return make_response(jsonify({'message':'All Fields are required - name,email and password'}),400)
         # reading userdata from file
         user_data = get_userdata()
 

@@ -9,10 +9,10 @@ import Alert from "../components/Alert";
 const Signup = () => {
   const navigate = useNavigate();
   const [state, setState] = useState({
-    name: "Eswar Krishna",
-    email: "maganti.ek@gmail.com",
-    password: "maganti.ek",
-    confirmPassword: "maganti.ek",
+    name: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
   });
   const { name, email, password, confirmPassword } = state;
   const [status, setStatus] = useState({
